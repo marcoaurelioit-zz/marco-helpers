@@ -24,7 +24,7 @@ namespace Marco.Helpers
             var type = typeof(T);
 
             if (!type.IsEnum)
-                throw new ArgumentException("O tipo informado não é um enumerador.");
+                throw new ArgumentException("The type informed is not an enumerator.");
 
             if (Enum.IsDefined(type, intValue))
                 return (T)Enum.ToObject(type, intValue);
@@ -37,7 +37,7 @@ namespace Marco.Helpers
             var type = typeof(T);
 
             if (!type.IsEnum)
-                throw new ArgumentException("O tipo informado não é um enumerador.");
+                throw new ArgumentException("The type informed is not an enumerator.");
 
             if (Enum.IsDefined(type, value))
                 return (T)Enum.ToObject(type, value);
